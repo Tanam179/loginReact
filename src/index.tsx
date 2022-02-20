@@ -10,6 +10,7 @@ import Password from "./passwordInput";
 import Remember from "./Remember";
 import LoginButton from "./LoginBtn";
 import SignUp from "./Signup";
+import CopyRight from "./CopyRight";
 
 interface AppProps {
     
@@ -44,24 +45,28 @@ class App extends React.Component<AppProps, AppState> {
                     </div>
                 </div>
                 <div className="wrapper-right">
-                    <div className="logo">
-                        <Logo></Logo>
-                    </div>
-                    <div className="Login">
-                        <h1>Login</h1>
-                        <UserName></UserName>
-                        <Password></Password>
-                    </div>
-                    <div className="remember">
-                        <div className="remember-left">
-                            <Remember></Remember>
+                    <div className="d-flex-col">
+                        <div className="logo">
+                            <Logo></Logo>
                         </div>
-                        <a href="#" className="forgot">Forgot Password?</a>
+                        <div className="Login">
+                            <h1>Login</h1>
+                            <UserName></UserName>
+                            <Password></Password>
+                        </div>
+                        <div className="remember">
+                            <div className="remember-left">
+                                <Remember></Remember>
+                            </div>
+                            <a href="#" className="forgot">Forgot Password?</a>
+                        </div>
+                        <div className="login">
+                            <LoginButton content="LOGIN"></LoginButton>
+                        </div>
+                        <SignUp content="Don't have an account?" subContent="Sign up?"></SignUp>
                     </div>
-                    <div className="login">
-                        <LoginButton content="LOGIN"></LoginButton>
-                    </div>
-                    <SignUp content="Don't have an account?" subContent="Sign up?"></SignUp>
+                    
+                    <CopyRight content="© 2022 ANFLASH TECHNOLOGY. All rights reserved."></CopyRight>
                 </div>
             </div>
             

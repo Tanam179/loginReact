@@ -49,15 +49,15 @@ body {
   left: 50%;
   transform: translate(-50%, 70%);
   width: 1200px;
-  height: 900px;
-  border-radius: 50%;
+  height: 800px;
+  border-radius: 70%;
 }
 
 .wrapper-left-content {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, -75%);
+  transform: translate(-50%, -55%);
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -101,21 +101,26 @@ a span {
 
 .wrapper-right {
   width: 50%;
-  padding: 50px 100px;
+  padding: 70px 120px;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.wrapper-right .logo {
-  margin-bottom: 100px;
+.wrapper-right .d-flex-col .logo {
+  margin-bottom: 130px;
 }
 
-.wrapper-right .logo img {
-  width: 150px;
+.wrapper-right .d-flex-col .logo img {
+  width: 120px;
 }
 
 h1 {
   color: #4a575d;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 30px;
 }
 
 input[type=text],
@@ -125,29 +130,32 @@ input[type=password] {
   border: none;
   outline: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 input::-moz-placeholder {
   font-weight: 300;
   font-size: 15px;
+  letter-spacing: 1px;
 }
 
 input:-ms-input-placeholder {
   font-weight: 300;
   font-size: 15px;
+  letter-spacing: 1px;
 }
 
 input::placeholder {
   font-weight: 300;
   font-size: 15px;
+  letter-spacing: 1px;
 }
 
 .remember {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .remember-left {
@@ -165,7 +173,7 @@ input::placeholder {
 .login {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .login button {
@@ -193,6 +201,12 @@ input::placeholder {
 
 .sign-up a {
   margin-left: 5px;
+}
+
+.copyright {
+  font-size: 11px;
+  color: #333;
+  font-weight: 400;
 }
 
 @media (max-width: 1099px) {
