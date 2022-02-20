@@ -19,16 +19,15 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--text-color);
-  padding: 50px 0;
-}
-
-.wrapper {
-  height: 550px;
+  background: #f2f2f2;
 }
 
 .container {
   max-width: 1180px;
   margin: 0 auto;
+}
+
+#wrapper .container {
   display: flex;
 }
 
@@ -58,35 +57,139 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-45%, -30%);
+  transform: translate(-45%, -28%);
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+}
+
+.title {
+  display: flex;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.title span {
+  height: 0.5px;
+  width: 60px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 3px;
 }
 
 .wrapper-left-content p {
-  margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 13px;
+  padding: 0 10px;
+  white-space: nowrap;
 }
 
-a {
+.wrapper-left-content a {
   color: var(--text-color);
   font-weight: 300;
   text-decoration: none;
   display: inline-block;
   padding: 5px;
-  width: 250px;
   background: rgba(255, 255, 255, 0.2);
   text-align: center;
   margin-bottom: 10px;
   border-radius: 100px;
+  font-size: 13px;
 }
 
-span {
+a span {
   color: #fff;
 }
 
 .wrapper-right {
   width: 50%;
-  background: #f8d27c;
+  padding: 50px 100px;
+  background: #fff;
+}
+
+.wrapper-right .logo {
+  margin-bottom: 75px;
+}
+
+.wrapper-right .logo img {
+  width: 150px;
+}
+
+h1 {
+  color: #4a575d;
+  margin-bottom: 20px;
+}
+
+input[type=text],
+input[type=password] {
+  padding: 5px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px;
+}
+
+input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+input::placeholder {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.remember-left {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 300;
+  color: #333;
+}
+
+.remember-left span {
+  margin-left: 5px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login button {
+  padding: 8px 50px;
+  border-radius: 100px;
+  background: var(--main-color);
+  color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.forgot {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  color: #444;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sign-up a {
+  margin-left: 5px;
 }
