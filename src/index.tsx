@@ -32,16 +32,15 @@ class App extends React.Component<AppProps, AppState> {
                 <div className="wrapper-left">
                     <Image></Image>
                     <div className="wrapper-left-circle">
-                        <div className="wrapper-left-content">
-                            <div className="title">
-                                <span></span>
-                                <p>or Sign in with:</p>
-                                <span></span>
-                            </div>
-                            <Google content="Sign in with" subContent="Google"></Google>
-                            <Facebook content="Sign in with" subContent="Facebook"></Facebook>
-                            
+                    </div>
+                    <div className="wrapper-left-content">
+                        <div className="title">
+                            <span></span>
+                            <p>or Sign in with:</p>
+                            <span></span>
                         </div>
+                        <Google content="Sign in with" subContent="Google"></Google>
+                        <Facebook content="Sign in with" subContent="Facebook"></Facebook>   
                     </div>
                 </div>
                 <div className="wrapper-right">
